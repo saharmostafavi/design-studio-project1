@@ -1,0 +1,583 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(155, 153, 153, 0.604);
+    font-family: 'Comic Neue', cursive;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(../img/creative-interior-design-with-elegant-wooden-bench-beautiful-decorations-accessories-modern-home-interior-design-retro-inspiration-copy-space-structure-wall-template-1620x1080.jpg);
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    height: 90px;
+    padding: 10px;
+    /* border: 2px solid black; */
+}
+
+.menu>nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.103);
+    backdrop-filter: blur(4px);
+    border-radius: 50px;
+    border: 6px solidrgba(255, 255, 255, 0.574)e;
+
+}
+
+.menu>nav * {
+    height: 100%;
+    /* border: 3px solid purple; */
+
+}
+
+.menu>nav>figure {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+    >img {
+        width: 45%;
+        object-fit: cover;
+        padding: 10px;
+
+    }
+
+}
+
+.menu>nav>ul {
+    width: 65%;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+
+    >li {
+        list-style: none;
+        margin: 0px 15px;
+        position: relative;
+
+
+        /* overflow: hidden; */
+        &:hover .dropdown {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 52px;
+            left: auto;
+
+        }
+
+
+        >a {
+            text-decoration: none;
+            font-size: 20px;
+            display: flex;
+            height: 100%;
+            align-items: center;
+            padding: 3px 9px;
+            color: black;
+            text-transform: uppercase;
+
+            &:hover {
+                color: seashell;
+                background-color: rgba(88, 87, 87, 0.384);
+                border-radius: 3px;
+
+            }
+
+        }
+
+        >.dropdown {
+            /* flex-direction: column;
+            display: flex; */
+            display: none;
+            width: 200px;
+            height: 250px;
+            background-color: rgba(222, 205, 205, 0.578);
+            box-shadow: 2px 2px 5px black;
+            transition: 1s;
+
+            >li {
+                list-style: none;
+                padding: 15px;
+
+                &:hover>a {
+                    font-weight: bold;
+                    text-transform: uppercase;
+
+
+                }
+
+                >a {
+                    font-size: 17px;
+                    text-decoration: none;
+                    color: black;
+
+
+
+                }
+            }
+
+        }
+    }
+}
+
+.hgroup {
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 300px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    >* {
+        text-align: center;
+        line-height: 30px;
+        padding: 10px;
+    }
+
+    >h1 {
+        font-size: 83px;
+        text-transform: uppercase;
+        /* letter-spacing: 4px; */
+        color: transparent;
+        background-clip: text;
+        background-image: linear-gradient(110deg, black, gray);
+        background-position: left;
+        padding: 64px 0px;
+        transition: 1s;
+        font-weight: bold;
+
+        &:hover {
+            letter-spacing: 10px;
+        }
+
+    }
+
+    >p {
+        font-size: 35px;
+        text-transform: lowercase;
+        width: 500px;
+        /* font-weight: bold; */
+        color: rgb(76, 74, 74);
+
+    }
+
+    >button {
+        background-color: seashell;
+        border-radius: 4px;
+        align-items: center;
+        justify-content: center;
+        width: 10%;
+        padding: 5px;
+        margin-top: 15px;
+        box-shadow: 0px 0px 20px 20px rgba(255, 245, 238, 0.6);
+        transition: .5s;
+        cursor: pointer;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.53);
+
+            >a {
+                color: white;
+            }
+
+            box-shadow: 0px 0px 0px 5px rgba(255, 245, 238, 0.6);
+        }
+
+        >a {
+            color: rgb(32, 32, 32);
+            font-size: 12px;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 1px;
+
+        }
+
+    }
+
+
+}
+
+
+.describe {
+    width: 100%;
+    height: 400px;
+    background-color: rgba(155, 153, 153, 0.604);
+    display: flex;
+
+    >* {
+        text-align: center;
+        width: 50%;
+        line-height: 35px;
+        padding: 50px;
+
+
+        >h2 {
+            font-size: 25px;
+            text-transform: uppercase;
+            color: rgba(66, 65, 65, 0.781);
+        }
+
+        >p:nth-of-type(1) {
+            font-size: 26px;
+            text-transform: capitalize;
+            color: rgb(104, 102, 102);
+            text-align: center;
+        }
+
+        >p:nth-of-type(2) {
+            font-size: 17px;
+            padding: 0px 50px;
+            color: rgb(134, 132, 132);
+        }
+    }
+}
+
+.describe>div {
+    width: 50%;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    >.gif {
+        height: 350px;
+        width: 350px;
+        /* border: 3px solid black; */
+        border-radius: 50%;
+        background-image: url(../vid/ezgif-5-585045c230\ \(1\).gif);
+        background-size: cover;
+        background-position: center;
+        /* box-shadow: 10px 10px 5px rgba(140, 141, 141, 0.722); */
+        /* backdrop-filter: darken 10px; */
+
+    }
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+}
+
+.gallery {
+    max-width: 100vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: #aaa8a8;
+}
+
+.gallery-cont {
+    width: 100%;
+    height: 120vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+
+.img-cont {
+    /* border: solid black 2px; */
+    position: relative;
+    overflow: hidden;
+}
+
+.img1-cont {
+    grid-column-start: 0;
+    grid-column-end: span 2;
+    grid-row-start: 0;
+    grid-row-end: span 2;
+    background: url(../img/Artificial\ Flowers\ &\ Stems\ Collection\ _\ Hudson\ Home.jpeg);
+    background-position: 1%;
+    background-size: 100%;
+}
+
+.img2-cont {
+    background: url(../img/Acrylic\ W\ Book\ Magazine\ Holder\ -\ Blue.jpeg);
+    background-position: 100%;
+    background-size: cover;
+}
+
+.img3-cont {
+    background: url(../img/cosmetic\ mockup.jpeg);
+    background-position: 100%;
+    background-size: cover;
+}
+
+.img4-cont {
+    background: url(../img/Cozy\ yet\ minimal\ home\ -\ COCO\ LAPINE\ DESIGN.jpeg);
+    background-position: 100%;
+    background-size: cover;
+}
+
+.img5-cont {
+    background: url(../img/Principal\ en-suite\ Bruny\ Island\,\ Tasmania.jpeg);
+    background-position: 100%;
+    background-size: cover;
+}
+
+.img6-cont {
+    background: url(../img/HugeDomains_com.jpeg);
+    background-position: 100%;
+    background-size: cover;
+}
+
+.img7-cont {
+    background: url(../img/In\ the\ neighbourhood_\ two\ elegant\,\ minimal\ London\ homes\ -\ catesthill_com.jpeg);
+    background-position: 100%;
+    background-size: cover;
+}
+
+.img8-cont {
+    grid-column-end: span 2;
+    background: url('../img/creative-interior-design-with-elegant-wooden-bench-beautiful-decorations-accessories-modern-home-interior-design-retro-inspiration-copy-space-structure-wall-template-1620x1080.jpg');
+    background-position: 100%;
+    background-size: cover;
+}
+
+.hpb {
+    background: rgba(50, 50, 50, 0.26);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5  px;
+    text-align: center;
+    transition: 1s;
+
+    &:hover {
+        transform: perspective(700px) translateZ(70px);
+    }
+
+    >* {
+        color: rgb(254, 251, 251);
+    }
+
+    >h3 {
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    >p {
+        font-size: 15px;
+        padding: 15px;
+        width: 130px;
+    }
+
+    >button {
+        padding: 10px 15px;
+        background-color: rgba(225, 222, 222, 0.484);
+        border-radius: 5px;
+
+        >a {
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+
+    }
+}
+
+/* 
+.img-desc-title {
+    color: white;
+    font-size: 2rem;
+} */
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Maintain aspect ratio */
+    /* border: none !important; */
+}
+
+
+
+
+
+/* ********************************************************* */
+
+.hp {
+    width: 100%;
+    background-image: radial-gradient(rgba(156, 150, 150, 0.71), rgba(44, 43, 43, 0.589));
+    padding: 90px;
+    text-align: center;
+
+    >hgroup {
+        line-height: 40px;
+
+        >p {
+            padding: 40px;
+            color: white;
+            font-size: 20px;
+            text-align: left;
+        }
+    }
+}
+
+.btn {
+    padding: 20px 30px;
+    background-color: rgba(255, 255, 255, 0.484);
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 5px 5px 0px 0px black;
+    border-radius: 30px;
+    transition: .5s;
+
+    >a {
+
+        color: white;
+        text-decoration: none;
+    }
+
+    &:active {
+        transform: scale(.9);
+    }
+
+    &:hover {
+        background: rgba(169, 168, 168, 0.697);
+        color: black;
+
+        >a {
+            color: black;
+        }
+    }
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 50px;
+    color: white;
+    border-right: 4px solid black;
+    width: 30px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.vid {
+    height: 70%;
+    width: 100%;
+    /* border: 2px red; */
+    padding: 50px 0;
+    position: relative;
+    z-index: -3;
+
+
+    >video {
+        height: 100%;
+        width: 100vw;
+        object-fit: cover;
+    }
+
+    >.blur {
+        border: 3px solid;
+        padding: 40px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(75, 75, 75, 0.282);
+        backdrop-filter: blur(30px);
+        margin: 30px;
+        margin-left: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}
+
+h4 {
+    writing-mode: vertical-lr;
+    font-size: 25px;
+}
+
+.blur-text {
+    width: 150px;
+    line-height: 20px;
+
+    &::first-letter {
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+
+/* ******************************************************************** */
+
+.aboutme{
+    width: 100%;
+    height: 30%;
+    background-color:rgb(60, 58, 58);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: ;
+    >div{
+      width: 30%;
+      height: 100%;
+      /* border:2px solid rgb(255, 255, 255); */
+    }
+  }
+  .logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .logo>figure{
+    width: 200px;
+    height: 200px;
+    /* border:2px solid red; */
+    border-radius: 20px;
+    background-image: url(../img/sahar-mostafavi-high-resolution-logo-white-transparent.png);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    >ul{
+      width: 80%;
+      height: 80px;
+      border: 2x solid purple;
+      display: flex;
+      >li{
+        /* border: 3px solid red; */
+        padding: 20px;
+        list-style: none;
+        >a{
+          color: rgba(255, 255, 255, 0.726);
+          padding: 10px;
+  
+        }
+      }
+    }
+  }
+  
